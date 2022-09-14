@@ -2,7 +2,7 @@
 
 namespace RSS.Scraper.API.Entities;
 
-public class User : IdentityUser<Guid>
+public class RssUser : IdentityUser
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
