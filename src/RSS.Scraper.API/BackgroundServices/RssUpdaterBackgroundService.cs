@@ -12,7 +12,9 @@ public class RssUpdaterBackgroundService : BackgroundService
 
         RssFeed rssFeed = new()
         {
-
+            Description = feed.Description.Text,
+            Link = feed.Links.Select(l=> l.Uri).FirstOrDefault().OriginalString,
+            Title = feed.Title.Text,
         };
         foreach (SyndicationItem item in feed.Items)
         {
