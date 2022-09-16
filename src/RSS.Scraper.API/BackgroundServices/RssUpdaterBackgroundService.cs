@@ -1,5 +1,6 @@
 ﻿using System.ServiceModel.Syndication;
 using System.Xml;
+using RSS.Scraper.API.Entities;
 
 namespace RSS.Scraper.API.BackgroundServices;
 
